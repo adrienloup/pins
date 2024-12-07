@@ -6,6 +6,7 @@ function GamePage() {
   return (
     <PageComponent>
       <h1 className={styles.title}>One pin. Two pins. Three pins...</h1>
+      <div style={{ height: "5000px" }}>div</div>
     </PageComponent>
   );
 }

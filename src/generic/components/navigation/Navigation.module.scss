@@ -1,0 +1,27 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-neutral-1);
+  border-bottom: 0.05rem solid var(--color-neutral-4);
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  a {
+    padding: 1rem;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
+    color: var(--color-neutral-5);
+
+    &:hover {
+      background-color: var(--color-neutral-2);
+    }
+
+    &:focus-visible {
+      outline: 0.25rem solid red;
+      outline-offset: -0.25rem;
+    }
+  }
+}

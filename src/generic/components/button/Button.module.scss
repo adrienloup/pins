@@ -1,0 +1,17 @@
+.button {
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  line-height: 1;
+  text-decoration: none;
+  font-family: var(--regular-font);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 0.25rem solid red;
+    outline-offset: 0.25rem;
+  }
+}
