@@ -1,4 +1,4 @@
-import { Main } from "@/generic/components/main/Main.type";
+import { Main } from "./Main.type";
 
 import styles from "./Main.module.scss";
 
