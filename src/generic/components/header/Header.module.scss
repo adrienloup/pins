@@ -1,5 +1,6 @@
 .header {
   position: sticky;
-  padding: 1rem;
-  // background-color: var(--color-neutral-3);
+  padding: var(--spacing-s);
+  letter-spacing: 0.05rem;
+  font-size: var(--font-size-2xs);
 }

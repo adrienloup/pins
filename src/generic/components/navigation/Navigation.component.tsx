@@ -10,7 +10,7 @@ export const NavigationComponent = () => {
           <Button to="/pins">The Pins Game</Button>
         </li>
         <li>
-          <Button to="/pins/indications">Indications</Button>
+          <Button to="/pins/indications">The Indications</Button>
         </li>
       </ul>
     </nav>

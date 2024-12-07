@@ -4,6 +4,14 @@
   --font-icon: "Icons", sans-serif;
 }
 
+@mixin font-sizes {
+  --font-size-2xl: 3.5rem; /* 56px */
+  --font-size-l: 2.5rem; /* 40px */
+  --font-size-m: 1.25rem; /* 20px */
+  --font-size-s: 1rem; /* 16px */
+  --font-size-2xs: 0.75rem; /* 12px */
+}
+
 @mixin colors {
   --color-neutral-1: #fefefe;
   --color-neutral-2: #fcfbfe;
@@ -13,15 +21,25 @@
   --color-primary: #7e40e6;
 }
 
-@mixin font-sizes {
-  --font-size-2xl: 3.5rem; /* 56px */
-  --font-size-l: 2.5rem; /* 40px */
-  --font-size-m: 1.5rem; /* 24px */
-  --font-size-s: 1rem; /* 16px */
+@mixin spacings {
+  --spacing-l: 4rem; /* 64px */
+  --spacing-m: 2rem; /* 32px */
+  --spacing-s: 1rem; /* 16px */
+}
+
+@mixin radius {
+  --radius-l: 1.875rem;
+}
+
+@mixin shadows {
+  --shadow-m: 0.125rem 0.25rem 0.75rem rgba(0 0 0 / 0.08);
 }
 
 :root {
   @include fonts();
-  @include colors();
   @include font-sizes();
+  @include colors();
+  @include spacings();
+  @include radius();
+  @include shadows();
 }
