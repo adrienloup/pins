@@ -1,9 +1,10 @@
 :root {
-  font-family: var(--medium-font);
+  font-family: var(--font-regular);
   line-height: 1.2;
-  font-size: 1rem;
-  color: #1d1d1f;
-  background-color: #f5f5f7;
+  font-size: var(--font-size-s);
+  color: var(--color-neutral-2);
+  background-color: var(--color-neutral-1);
+  letter-spacing: -0.05em;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,17 +26,4 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-h1 {
-  text-align: center;
-  font-family: var(--bold-font);
-  letter-spacing: -0.005em;
-  font-weight: normal;
-  font-size: 3.5rem;
-
-  span {
-    display: block;
-    color: #7e40e6;
-  }
 }

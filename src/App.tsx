@@ -1,24 +1,19 @@
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import GamePage from "./game/Game.page";
+import IndicationsPage from "./indications/Indications.page";
+
 import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>One pin. Two pins. Three pins...</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/pins" element={<GamePage />} />
+        <Route path="/pins/indications" element={<IndicationsPage />} />
+        <Route path="/pins/*" element={<GamePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

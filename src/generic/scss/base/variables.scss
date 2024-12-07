@@ -1,9 +1,24 @@
 @mixin fonts {
-  --bold-font: "Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
-  --medium-font: "Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
-  --icon-font: "Icons", sans-serif;
+  --font-bold: "Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-regular: "Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-icon: "Icons", sans-serif;
+}
+
+@mixin colors {
+  --color-neutral-1: #f5f5f7;
+  --color-neutral-2: #1d1d1f;
+  --color-primary: #7e40e6;
+}
+
+@mixin font-sizes {
+  --font-size-2xl: 3.5rem; /* 56px */
+  --font-size-l: 2.5rem; /* 40px */
+  --font-size-m: 1.5rem; /* 24px */
+  --font-size-s: 1rem; /* 16px */
 }
 
 :root {
   @include fonts();
+  @include colors();
+  @include font-sizes();
 }
