@@ -1,0 +1,9 @@
+@mixin fonts {
+  --bold-font: "Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --medium-font: "Medium", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --icon-font: "Icons", sans-serif;
+}
+
+:root {
+  @include fonts();
+}
