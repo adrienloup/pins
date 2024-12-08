@@ -12,7 +12,7 @@ interface ButtonProps<T> extends AttributesType<T> {
   onClick?: () => void;
 }
 
-export const Button = ({
+export const ButtonComponent = ({
   children,
   href,
   to,

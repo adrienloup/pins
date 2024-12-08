@@ -1,8 +1,11 @@
 .footer {
+  grid-area: footer;
   padding: var(--spacing-s);
-  background-color: var(--color-neutral-1);
-  border-top: 0.05rem solid var(--color-neutral-4);
+  background-color: #202124;
+  // background-color: var(--color-neutral-1);
+  // border-top: 0.05rem solid var(--color-neutral-4);
   text-align: right;
-  letter-spacing: 0.05rem;
-  font-size: var(--font-size-2xs);
+  // letter-spacing: 0.05rem;
+  // font-size: var(--font-size-2xs);
+  color: var(--color-neutral-1);
 }

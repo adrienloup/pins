@@ -1,4 +1,4 @@
-import { Button } from "../button/Button.component";
+import { ButtonComponent } from "../button/Button.component";
 
 import styles from "./Navigation.module.scss";
 
@@ -7,10 +7,12 @@ export const NavigationComponent = () => {
     <nav className={styles.navigation} role="navigation">
       <ul>
         <li>
-          <Button to="/pins">The Pins Game</Button>
+          <ButtonComponent to="/pins">The Pins Game</ButtonComponent>
         </li>
         <li>
-          <Button to="/pins/indications">The Indications</Button>
+          <ButtonComponent to="/pins/indications">
+            The Indications
+          </ButtonComponent>
         </li>
       </ul>
     </nav>

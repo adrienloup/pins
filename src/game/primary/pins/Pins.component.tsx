@@ -5,5 +5,16 @@ import styles from "./Pins.module.scss";
 export const PinsComponent = () => {
   const { data } = useData();
 
-  return <div className={styles.pins}>Pins: {data.pins}</div>;
+  const numberWithCommas = (n: number) =>
+    n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
+  return (
+    <div className={styles.pins}>
+      <div className={styles.inner}>
+        <span>
+          Pins: <span>{numberWithCommas(data.pins)}</span>
+        </span>
+      </div>
+    </div>
+  );
 };

@@ -1,0 +1,11 @@
+.aside {
+  grid-area: aside;
+  background-color: #252932;
+}
+
+.inner {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: red;
+}

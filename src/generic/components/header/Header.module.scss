@@ -1,6 +1,4 @@
 .header {
-  position: sticky;
-  padding: var(--spacing-s);
-  letter-spacing: 0.05rem;
-  font-size: var(--font-size-2xs);
+  grid-area: header;
+  background-color: #252932;
 }

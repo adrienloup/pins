@@ -1,17 +1,10 @@
-import { createContext, useEffect } from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocalStorage } from "../hooks/useLocalStorage";
+import { LocalisationContext } from "./LocalisationContext";
 import { Children } from "../types/Children";
 
 type Localisation = "fr" | "en";
-
-export const LocalisationContext = createContext<{
-  language: Localisation;
-  setLanguage: (language: Localisation) => void;
-}>({
-  language: "en",
-  setLanguage: (language: Localisation) => language,
-});
 
 export function LocalisationProvider({ children }: { children: Children }) {
   const { i18n } = useTranslation();
@@ -23,7 +16,7 @@ export function LocalisationProvider({ children }: { children: Children }) {
   useEffect(() => {
     i18n.changeLanguage(language);
     document.documentElement.lang = i18n.language;
-  }, [language]);
+  }, [i18n, language]);
 
   return (
     <LocalisationContext.Provider value={{ language, setLanguage }}>

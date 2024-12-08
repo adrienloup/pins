@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useData } from "../../secondary/useData";
-// import { Card } from "@/generic/components/card/Card";
-import { Button } from "../../../generic/components/button/Button.component";
+import { CardComponent } from "../../../generic/components/card/Card.component";
+import { ButtonComponent } from "../../../generic/components/button/Button.component";
 // import { Icon } from "@/generic/components/icon/Icon";
 
 import styles from "./Manufacturing.module.scss";
 
-export const Manufacturing = () => {
+export const ManufacturingComponent = () => {
   const { data, setData } = useData();
   const [pins, setPins] = useState<number>(data.pins);
   const [pinsPerSecond, setPinsPerSecond] = useState<number>(0);
@@ -32,24 +32,28 @@ export const Manufacturing = () => {
   }, [rate]);
 
   return (
-    <div className={styles.inner}>
+    <CardComponent className={styles.manufacturing}>
+      {/* <div className={styles.inner}> */}
       {/* <p>Trombones produits : {pins}</p> */}
       <p>Trombones par seconde : {pinsPerSecond}</p>
-      <Button className={styles.button} onClick={makePins}>
+      <ButtonComponent className={styles.button} onClick={makePins}>
         Produire un trombone
-      </Button>
+      </ButtonComponent>
       <p>1,749 fils de fer</p>
       <div>
-        <Button className={styles.button}>Acheter du fer</Button>
+        <ButtonComponent className={styles.button}>
+          Acheter du fer
+        </ButtonComponent>
         Cost: $
       </div>
       <p>Machine : 0</p>
       <div>
-        <Button className={styles.button} onClick={makePins}>
+        <ButtonComponent className={styles.button} onClick={makePins}>
           Acheter une machine
-        </Button>
+        </ButtonComponent>
         Cost: $ 5.00
       </div>
-    </div>
+      {/* </div> */}
+    </CardComponent>
   );
 };

@@ -1,9 +1,8 @@
 .navigation {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: var(--color-neutral-1);
-  border-bottom: 0.05rem solid var(--color-neutral-4);
+  // background-color: var(--color-neutral-1);
+  // background-color: #252932;
+  // border-top: 0.05rem solid var(--color-neutral-4);
+  // background-color: #252932;
 
   ul {
     display: flex;
@@ -13,8 +12,9 @@
   a {
     padding: var(--spacing-s);
     letter-spacing: 0.05rem;
-    font-size: var(--font-size-2xs);
-    color: var(--color-neutral-5);
+    // font-size: var(--font-size-2xs);
+    font-size: 1.5rem;
+    color: var(--color-neutral-4);
 
     &:hover {
       background-color: var(--color-neutral-2);

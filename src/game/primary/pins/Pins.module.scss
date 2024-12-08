@@ -1,15 +1,40 @@
 .pins {
   position: sticky;
-  bottom: 0;
-  padding: var(--spacing-s);
-  // grid-column: span 3;
-  //background: linear-gradient(90deg, #feefff, #e1d6ea 0%, #ffe4e2 75%);
-  //background-color: var(--color-neutral-5);
-  // background-color: #dce7f9;
-  //background-color: #f7eafb;
-  background-color: var(--color-neutral-5);
-  // font-family: var(--font-bold);
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 1rem;
+  background-color: #202124;
   font-size: var(--font-size-m);
   color: var(--color-neutral-1);
-  // color: #f7eafb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1.5rem;
+    left: 0;
+    z-index: 1;
+    height: 3rem;
+    background: -webkit-linear-gradient(bottom, transparent, #202124 1.5rem);
+    background: linear-gradient(0deg, transparent 0, #202124 1.5rem);
+  }
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  padding: var(--spacing-s);
+  text-align: center;
+
+  span {
+    background: linear-gradient(to right, #c084fc, #db2777);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    span {
+      font-size: var(--font-size-2xl);
+    }
+  }
 }

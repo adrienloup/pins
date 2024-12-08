@@ -1,6 +1,6 @@
 @mixin fonts {
-  --font-bold: "Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-regular: "Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-text: "Text", Helvetica Neue, Helvetica, Arial, sans-serif;
+  // --font-text: "Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-icon: "Icons", sans-serif;
 }
 
@@ -17,7 +17,8 @@
   --color-neutral-2: #fcfbfe;
   --color-neutral-3: #f0f0f2;
   --color-neutral-4: #d2d2d5;
-  --color-neutral-5: #1d1d1f;
+  --color-neutral-5: #9aa0a6;
+  --color-neutral-6: #1d1d1f;
   --color-primary: #7e40e6;
 }
 
