@@ -22,10 +22,12 @@
 }
 
 .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 2;
   padding: var(--spacing-s);
-  text-align: center;
 
   span {
     background: linear-gradient(to right, #c084fc, #db2777);

@@ -7,12 +7,10 @@ export const NavigationComponent = () => {
     <nav className={styles.navigation} role="navigation">
       <ul>
         <li>
-          <ButtonComponent to="/pins">The Pins Game</ButtonComponent>
+          <ButtonComponent to="/pins">Game</ButtonComponent>
         </li>
         <li>
-          <ButtonComponent to="/pins/indications">
-            The Indications
-          </ButtonComponent>
+          <ButtonComponent to="/pins/indications">About</ButtonComponent>
         </li>
       </ul>
     </nav>
