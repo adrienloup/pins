@@ -1,14 +1,14 @@
-.pincounter {
-  grid-column: span 3;
+.pinstock {
+  position: sticky;
+  bottom: 0;
+  padding: var(--spacing-s);
+  // grid-column: span 3;
   //background: linear-gradient(90deg, #feefff, #e1d6ea 0%, #ffe4e2 75%);
   //background-color: var(--color-neutral-5);
   // background-color: #dce7f9;
   //background-color: #f7eafb;
   background-color: var(--color-neutral-5);
-  color: #f7eafb;
-}
-
-.number {
-  // font-family: var(--font-bold);
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-m);
+  color: var(--color-neutral-1);
+  // color: #f7eafb;
 }

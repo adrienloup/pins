@@ -1,15 +1,13 @@
-import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { PageComponent } from "../generic/components/page/Page.component";
 
 function IndicationsPage() {
+  const { t } = useTranslation();
+
   return (
-    <div>
-      <h1>Indications</h1>
-      <div>
-        <Link to="/pins">Home</Link>
-        <br />
-        <Link to="/pins/indications">Indications</Link>
-      </div>
-    </div>
+    <PageComponent>
+      <h1>{t("page.indications.title")}</h1>
+    </PageComponent>
   );
 }
 
