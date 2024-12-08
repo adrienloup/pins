@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { PageComponent } from "../generic/components/page/Page.component";
+import { PageComponent } from "../../generic/components/page/Page.component";
 
 function IndicationsPage() {
   const { t } = useTranslation();

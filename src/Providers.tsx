@@ -7,6 +7,7 @@ import {
 
 import { Children } from "./generic/types/Children";
 import { LocalisationProvider } from "./generic/localisation/LocalisationProvider";
+import { DataProvider } from "./game/secondary/DataProvider";
 
 type ProvidersType = [
   ComponentType<{ children: Children }>,
@@ -25,4 +26,4 @@ const combineProviders = (providers: ProvidersType) =>
   );
 
 export const Providers: FunctionComponent<{ children: Children }> =
-  combineProviders([[LocalisationProvider]]);
+  combineProviders([[LocalisationProvider], [DataProvider]]);
