@@ -6,7 +6,7 @@ import { ButtonComponent } from "../../../generic/components/button/Button.compo
 
 import styles from "./Manufacturing.module.scss";
 
-export const ManufacturingComponent = () => {
+const ManufacturingComponent = () => {
   const { data, setData } = useData();
   const [pins, setPins] = useState<number>(data.pins);
   const [pinsPerSecond, setPinsPerSecond] = useState<number>(0);
@@ -33,27 +33,25 @@ export const ManufacturingComponent = () => {
 
   return (
     <CardComponent className={styles.manufacturing}>
-      {/* <div className={styles.inner}> */}
-      {/* <p>Trombones produits : {pins}</p> */}
-      <p>Trombones par seconde : {pinsPerSecond}</p>
+      <h2 className={styles.title}>Manufacturing</h2>
+      Pins per second {pinsPerSecond}
       <ButtonComponent className={styles.button} onClick={makePins}>
-        Produire un trombone
+        Make pin
       </ButtonComponent>
-      <p>1,749 fils de fer</p>
-      <div>
-        <ButtonComponent className={styles.button}>
-          Acheter du fer
-        </ButtonComponent>
-        Cost: $
+      1,000 inches
+      <div className={styles.line}>
+        <ButtonComponent className={styles.button}>Buy wire</ButtonComponent>{" "}
+        Cost $&nbsp;0.00
       </div>
-      <p>Machine : 0</p>
-      <div>
+      0 machine
+      <div className={styles.line}>
         <ButtonComponent className={styles.button} onClick={makePins}>
-          Acheter une machine
+          Buy unit
         </ButtonComponent>
-        Cost: $ 5.00
+        Cost $&nbsp;5.00
       </div>
-      {/* </div> */}
     </CardComponent>
   );
 };
+
+export default ManufacturingComponent;

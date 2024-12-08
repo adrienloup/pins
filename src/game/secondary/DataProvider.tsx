@@ -1,5 +1,5 @@
 import { useLocalStorage } from "../../generic/hooks/useLocalStorage";
-import { Children } from "../../generic/types/Children";
+import { Children } from "../../generic/types/Children.type";
 import { DataContext } from "./DataContext";
 import { Data } from "./Data";
 

@@ -1,26 +1,27 @@
 @mixin fonts {
   --font-text: "Text", Helvetica Neue, Helvetica, Arial, sans-serif;
-  // --font-text: "Regular", Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-icon: "Icons", sans-serif;
 }
 
 @mixin font-sizes {
-  --font-size-2xl: 3.5rem; /* 56px */
-  --font-size-l: 3rem; /* 48px */
-  --font-size-m: 2rem; /* 32px */
-  --font-size-s: 1rem; /* 16px */
-  --font-size-2xs: 0.75rem; /* 12px */
+  --font-size-2xl: 3rem; /* 48px */
+  --font-size-l: 2.25rem; /* 36px */
+  --font-size-m: 1.75rem; /* 28px */
+  --font-size-s: 1.25rem; /* 20px */
+  --font-size-2xs: 1rem; /* 16px */
 }
 
 @mixin colors {
   --color-neutral-1: #fefefe;
   --color-neutral-2: #fcfbfe;
-  --color-neutral-3: #f0f0f2;
+  --color-neutral-3: #e5e5eb;
   --color-neutral-4: #d2d2d5;
   --color-neutral-5: #9aa0a6;
-  --color-neutral-6: #1d1d1f;
-  --color-primary: #db2777;
-  --color-secondary: #7e40e6;
+  --color-neutral-6: #28292a;
+  --color-neutral-7: #202124;
+  --color-neutral-8: #1d1d1f;
+  --color-primary: #e61b76;
+  --color-secondary: #b269fb;
 }
 
 @mixin spacings {
@@ -37,6 +38,12 @@
   --shadow-m: 0.125rem 0.25rem 0.75rem rgba(0 0 0 / 0.08);
 }
 
+@mixin easings {
+  --ease-quad: cubic-bezier(0.22, 0.44, 0, 1);
+  --ease-quint: cubic-bezier(0.16, 1, 0.22, 1);
+  --ease-expo: cubic-bezier(0.85, 0, 0.15, 1);
+}
+
 :root {
   @include fonts();
   @include font-sizes();
@@ -44,4 +51,5 @@
   @include spacings();
   @include radius();
   @include shadows();
+  @include easings();
 }

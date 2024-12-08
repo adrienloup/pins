@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { LocalisationContext } from "./LocalisationContext";
-import { Children } from "../types/Children";
+import { Children } from "../types/Children.type";
 
 type Localisation = "fr" | "en";
 

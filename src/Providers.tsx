@@ -5,7 +5,7 @@ import {
   FunctionComponent,
 } from "react";
 
-import { Children } from "./generic/types/Children";
+import { Children } from "./generic/types/Children.type";
 import { LocalisationProvider } from "./generic/localisation/LocalisationProvider";
 import { DataProvider } from "./game/secondary/DataProvider";
 

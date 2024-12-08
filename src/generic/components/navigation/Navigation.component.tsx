@@ -7,10 +7,10 @@ export const NavigationComponent = () => {
     <nav className={styles.navigation} role="navigation">
       <ul>
         <li>
-          <ButtonComponent to="/pins">Game</ButtonComponent>
+          <ButtonComponent to="/pins">The Game</ButtonComponent>
         </li>
         <li>
-          <ButtonComponent to="/pins/indications">About</ButtonComponent>
+          <ButtonComponent to="/pins/concept">The concept</ButtonComponent>
         </li>
       </ul>
     </nav>

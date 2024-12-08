@@ -1,0 +1,55 @@
+.loader {
+  position: relative;
+  margin: 0 auto;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: var(--color-primary);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: Bounce 2s infinite var(--ease-quad);
+  }
+
+  &:before {
+    animation-delay: -1s;
+  }
+}
+
+.small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.medium {
+  width: 5rem;
+  height: 5rem;
+}
+
+.large {
+  width: 7rem;
+  height: 7rem;
+}
+
+@keyframes Bounce {
+  0% {
+    width: 10%;
+    height: 10%;
+    border-width: 0.25rem;
+    opacity: 0;
+  }
+  50% {
+    border-width: 0.5rem;
+    opacity: 1;
+  }
+  100% {
+    width: 90%;
+    height: 90%;
+    border-width: 0.25rem;
+    opacity: 0;
+  }
+}

@@ -2,26 +2,9 @@
   overflow: hidden;
   position: relative;
   display: flex;
-  min-height: 25rem;
   padding: var(--spacing-m);
+  background-color: var(--color-neutral-6);
   border-radius: var(--radius-l);
-  box-shadow: var(--shadow-m);
+  font-size: var(--font-size-s);
+  color: var(--color-neutral-3);
 }
-
-// .title {
-//   position: absolute;
-//   top: 1.25rem;
-//   left: 1.75rem;
-//   z-index: 2;
-//   font-family: var(--font-bold);
-//   font-size: var(--font-size-m);
-// }
-
-// .content {
-//   flex: 1;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   flex-wrap: wrap;
-// }
